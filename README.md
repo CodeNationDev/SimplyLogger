@@ -69,5 +69,7 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [https://github.com/CodeNationDev/](https://github.com/CodeNationDev)
 
 ## Version History
-* 1.0.0
+* 0.0.2
+  * Add Swift Package Manager Support
+* 0.0.1
     * First implementation with main features.
