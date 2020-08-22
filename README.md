@@ -69,13 +69,15 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [https://github.com/CodeNationDev/](https://github.com/CodeNationDev)
 
 ## Version History
+* 0.0.6
+  * Add compatibility with watchOS, macOS and tvOS.
 * 0.0.5
-  * Set Swift minumim version to 5.0
+  * Set Swift minumim version to 5.0.
 * 0.0.4
   * Add date time to log trace.
 * 0.0.3
   * Adjust iOS version to 11.
 * 0.0.2
-  * Add Swift Package Manager Support
+  * Add Swift Package Manager Support.
 * 0.0.1
     * First implementation with main features.
