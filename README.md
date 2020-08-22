@@ -69,6 +69,8 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [https://github.com/CodeNationDev/](https://github.com/CodeNationDev)
 
 ## Version History
+* 0.0.5
+  * Set Swift minumim version to 5.0
 * 0.0.4
   * Add date time to log trace.
 * 0.0.3
