@@ -2,6 +2,8 @@
 import Foundation
 import os.log
 
+
+
 public struct SimplyLogger {
     public enum LogCategory: String {
         case info = "✅"
@@ -17,7 +19,7 @@ public struct SimplyLogger {
         if logToSystem! {
             os_log("%@", log: log ?? .default, type: .info, "\(category.rawValue) \(str)")
         }
-        print("\(category.rawValue) \(str)")
+        print("[\(Date().localDate())]\(category.rawValue) \(str)")
     }
    
     public static func trace(str: String) {
