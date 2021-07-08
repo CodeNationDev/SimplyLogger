@@ -1,4 +1,12 @@
-# SimplyLogger
+
+╔═══╗──────╔╗────╔╗
+║╔═╗║──────║║────║║
+║╚══╦╦╗╔╦══╣║╔╗─╔╣║──╔══╦══╦══╦══╦═╗
+╚══╗╠╣╚╝║╔╗║║║║─║║║─╔╣╔╗║╔╗║╔╗║║═╣╔╝
+║╚═╝║║║║║╚╝║╚╣╚═╝║╚═╝║╚╝║╚╝║╚╝║║═╣║
+╚═══╩╩╩╩╣╔═╩═╩═╗╔╩═══╩══╩═╗╠═╗╠══╩╝
+────────║║───╔═╝║───────╔═╝╠═╝║
+────────╚╝───╚══╝───────╚══╩══╝
 > A simple logger for Swift.
 
 ## Installation
@@ -6,25 +14,33 @@ Use Swift Package Manager to add this package to your project.
 
 ## Definition & Interface
 ```swift
-public static func log(str: String, logToSystem: Bool? = false, category: LogCategory, type: OSLogType? = .debug, log: OSLog? = .default)
+public static func log(str: String, 
+                   appName: String? = nil, 
+                   identity: String? = nil, 
+                   logToSystem: Bool? = false, 
+                   category: LogCategory, 
+                   type: OSLogType? = .debug, 
+                   log: OSLog? = .default)
 ```
-- str (String): logging message
-- logToSystem (Bool): parameter for write log in system log console or not. Default is FALSE.
-- category (enum): the log category options:
+- **str (String):** logging message
+- **appName (String):** app name to show at log header.
+- **identity (String):** name of log.
+- **logToSystem (Bool):** parameter for write log in system log console or not. Default is FALSE.
+- **category (enum):** the log category options:
     ```swift 
     public enum LogCategory: String {
-        case info = "✅"
-        case warning = "⚠️"
-        case error = "🧨"
-        case viewcycle = "📱"
-        case data = "🗄"
-        case service = "📬"
-        case trace = "ℹ️"
+        case info = "✅✅"
+        case warning = "⚠️⚠️"
+        case error = "🧨🧨"
+        case viewcycle = "📱📱"
+        case data = "🗄🗄"
+        case service = "📬📬"
+        case trace = "ℹ️ℹ️"
     }
     ```
 
-- type (OSLogType): type of OSLog for system console.
-- log (OSLog): the log write.
+- **type (OSLogType):** type of OSLog for system console.
+- **log (OSLog):** the log write.
 
 ## Usage example
 ### Custom Log
@@ -69,6 +85,9 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [https://github.com/CodeNationDev/](https://github.com/CodeNationDev)
 
 ## Version History
+* 0.0.7
+  * Update log function and prints.
+  * Deprecate trace function.
 * 0.0.6
   * Add compatibility with watchOS, macOS and tvOS.
 * 0.0.5
