@@ -76,6 +76,14 @@ Also, you can do a complex trace using custom log with "trace" category.
  SimplyLogger.log(str: "Testing logging", logToSystem: true, category: .trace, type: .debug)
 ```
 
+>
+>## ROADMAP
+>- Store logs in BBDD for check and analyze behaviors (CoreData, Realm, SQLite...)
+>- Retrieve logs sliced in blocks.
+>- Set limits of number of logs stored.
+
+
+
 ## Meta
 
 David Martin Saiz – [@deividmarshall](https://twitter.com/deividmarshall) – davms81@gmail.com
