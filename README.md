@@ -29,13 +29,14 @@ public static func log(str: String,
 - **category (enum):** the log category options:
     ```swift 
     public enum LogCategory: String {
-        case info = "✅✅"
+        case success = "✅✅"
+        case info = "ℹ️ℹ️"
         case warning = "⚠️⚠️"
         case error = "🧨🧨"
         case viewcycle = "📱📱"
         case data = "🗄🗄"
         case service = "📬📬"
-        case trace = "ℹ️ℹ️"
+        case trace = "🔸🔸"
     }
     ```
 
