@@ -94,6 +94,13 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [https://github.com/CodeNationDev/](https://github.com/CodeNationDev)
 
 ## Version History
+* 0.0.8
+  * Fixed
+    - log type
+  * Updated
+    - Info icon
+  * Added
+    - Success category
 * 0.0.7
   * Update log function and prints.
   * Deprecate trace function.
